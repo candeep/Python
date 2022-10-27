@@ -1,0 +1,10 @@
+def sel(a):
+	for i in range(len(a)):
+		min=i
+		for j in range(i+1,len(a)):
+			if a[min]>a[j]:
+				min=j
+		a[min],a[i]=a[i],a[min]
+	return a
+a=[3 ,5,4,7,6,9,8]
+print(sel(a))
