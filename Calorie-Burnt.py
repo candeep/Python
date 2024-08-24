@@ -17,7 +17,7 @@ import pickle
 from tkinter import *
 
 def read_csv(file_path):
-    return pd.read_csv(file_path)
+    return pd.read_csv("calorie.csv)
 
 def dataset_info_statistics(data):
     print("Dataset Information:")
